@@ -13,7 +13,7 @@ console.log("Exercise One"); // Do not modify the lines like this before each ex
 //
 // Write your code here 👇
 
-for (let index = 0; index < 2; index++) {
+for (let index = 0; index < 10; index++) {
   console.log(index);
 }
 
@@ -26,6 +26,11 @@ console.log("Exercise Two");
 //
 // Write your code here 👇
 
+for (index = 1; index <= 20; index++) 
+{
+  console.log(index)
+}
+
 
 // ----------------------------------------------------------------------------------------------
 console.log("Exercise Three");
@@ -35,9 +40,10 @@ console.log("Exercise Three");
 //   (This should include the number 20, and the number 2, but not include the number 0)
 //
 // Write your code here 👇
-
-
-
+for (index = 2; index <= 20; index += 2)
+{
+  console.log(index)
+}
 // ----------------------------------------------------------------------------------------------
 // The following exercises will use the numbers array below
 
@@ -49,8 +55,10 @@ console.log("Exercise Four");
 // - Have your loop iterate through every number in the numbers array, printing the number to the console.
 //
 // Write your code here 👇
-
-
+for (index = 0; index < numbers.length; index++)
+{
+  console.log(numbers[index])
+}
 
 // ----------------------------------------------------------------------------------------------
 console.log("Exercise Five");
@@ -59,6 +67,18 @@ console.log("Exercise Five");
 //   printing out numbers LESS THAN (but not including) 20.
 //
 // Write your code here 👇
+lsThanArray = []
+for (index = 0; index <= numbers.length; index += 1)
+{
+  let currNum = numbers[index]
+  if (currNum < 20)
+  {
+    console.log(currNum)
+    lsThanArray.push(currNum)
+  }
+}
+console.log(lsThanArray)
+
 
 
 // ----------------------------------------------------------------------------------------------
@@ -69,7 +89,14 @@ console.log("Exercise Six");
 // - Hint 2: Remember that 0 times anything is 0.  So your result variable should not start at zero :) 
 //
 // Write your code here 👇
+let multSum = 1
 
+for (index = 0; index < numbers.length; index += 1)
+{
+  multSum *= numbers[index]
+  //console.log(multSum)
+}
+console.log(multSum)
 
 // ----------------------------------------------------------------------------------------------
 console.log("Exercise Seven");
@@ -79,7 +106,16 @@ console.log("Exercise Seven");
 //   (But don't hardcode that, find it with a loop...)
 //
 // Write your code here 👇
-
+largestNum = 0
+for (index = 0; index <= numbers.length; index += 1)
+{
+  let initNum = numbers[index]
+  if (initNum > largestNum)
+  {
+    largestNum = initNum
+  }
+}
+console.log(largestNum)
 
 // ----------------------------------------------------------------------------------------------
 console.log("Exercise Eight");
@@ -89,6 +125,17 @@ console.log("Exercise Eight");
 //
 // Write your code here 👇
 
+smallArray = []
+for (index = 0; index <= numbers.length; index += 1)
+{
+  let smallNum = numbers[index]
+  if (smallNum > 10)
+  {
+    //console.log(smallNum)
+    smallArray.push(smallNum)
+  }
+}
+console.log(smallArray)
 
 
 // When you are done with all of the exercises, check your console output to make sure it
