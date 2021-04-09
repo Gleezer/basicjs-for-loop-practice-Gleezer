@@ -67,7 +67,7 @@ console.log("Exercise Five");
 //   printing out numbers LESS THAN (but not including) 20.
 //
 // Write your code here 👇
-lsThanArray = []
+let lsThanArray = []
 for (index = 0; index <= numbers.length; index += 1)
 {
   let currNum = numbers[index]
@@ -106,7 +106,7 @@ console.log("Exercise Seven");
 //   (But don't hardcode that, find it with a loop...)
 //
 // Write your code here 👇
-largestNum = 0
+let largestNum = 0
 for (index = 0; index <= numbers.length; index += 1)
 {
   let initNum = numbers[index]
@@ -125,7 +125,7 @@ console.log("Exercise Eight");
 //
 // Write your code here 👇
 
-smallArray = []
+let smallArray = []
 for (index = 0; index <= numbers.length; index += 1)
 {
   let smallNum = numbers[index]
